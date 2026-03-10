@@ -50,7 +50,7 @@ jobs:
     - name: Build
       run: go build -v main.go
 
-  dokcer:
+  docker:
     needs: build
     uses: ./.github/workflows/docker.yml
 
